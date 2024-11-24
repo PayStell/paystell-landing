@@ -1,0 +1,49 @@
+rules {
+    // TypeScript strict rules
+    typescript {
+        noImplicitAny: true;
+        strictNullChecks: true;
+        noUnusedLocals: true;
+        noUnusedParameters: true;
+        exactOptionalPropertyTypes: true;
+        noImplicitReturns: true;
+        noFallthroughCasesInSwitch: true;
+    }
+
+    // React/Next.js patterns
+    react {
+        preferArrowFunctions: true;
+        preferConst: true;
+        componentNaming: PascalCase;
+        hooksNaming: useCamelCase;
+        maxJSXDepth: 4;
+        requirePropTypes: false; // Using TypeScript instead
+        requireDefaultProps: false; // Using TypeScript instead
+    }
+
+    // Tailwind organization
+    tailwind {
+        classesOrder: [
+            "layout",
+            "positioning",
+            "display",
+            "spacing",
+            "sizing",
+            "typography",
+            "backgrounds",
+            "borders",
+            "effects",
+            "transitions",
+            "transforms",
+            "interactivity"
+        ];
+        maxClassesPerElement: 15;
+        preferExtraction: true; // Extract to components when too many classes
+    }
+
+    // File organization
+    files {
+        maxLines
+    }
+}
+

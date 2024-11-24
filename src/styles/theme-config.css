@@ -1,0 +1,46 @@
+@layer base {
+  :root {
+    /* Base Colors */
+    --color-dodger-blue-50: #edfcff;
+    --color-dodger-blue-100: #d6f8ff;
+    --color-dodger-blue-200: #b5f4ff;
+    --color-dodger-blue-300: #83f0ff;
+    --color-dodger-blue-400: #48e4ff;
+    --color-dodger-blue-500: #1ecbff;
+    --color-dodger-blue-600: #06b1ff;
+    --color-dodger-blue-700: #009eff;
+    --color-dodger-blue-800: #0878c5;
+    --color-dodger-blue-900: #0d659b;
+    --color-dodger-blue-950: #0e3c5d;
+
+    /* Semantic tokens - Light mode */
+    --accent-1: var(--color-dodger-blue-50);
+    --accent-2: var(--color-dodger-blue-100);
+    --accent-3: var(--color-dodger-blue-200);
+    --accent-4: var(--color-dodger-blue-300);
+    --accent-5: var(--color-dodger-blue-400);
+    --accent-6: var(--color-dodger-blue-500);
+    --accent-7: var(--color-dodger-blue-600);
+    --accent-8: var(--color-dodger-blue-700);
+    --accent-9: var(--color-dodger-blue-800);
+    --accent-10: var(--color-dodger-blue-900);
+    --accent-11: var(--color-dodger-blue-950);
+    --accent-12: var(--color-dodger-blue-950);
+  }
+
+  .dark {
+    /* Semantic tokens - Dark mode */
+    --accent-1: var(--color-dodger-blue-950);
+    --accent-2: var(--color-dodger-blue-900);
+    --accent-3: var(--color-dodger-blue-800);
+    --accent-4: var(--color-dodger-blue-700);
+    --accent-5: var(--color-dodger-blue-600);
+    --accent-6: var(--color-dodger-blue-500);
+    --accent-7: var(--color-dodger-blue-400);
+    --accent-8: var(--color-dodger-blue-300);
+    --accent-9: var(--color-dodger-blue-200);
+    --accent-10: var(--color-dodger-blue-100);
+    --accent-11: var(--color-dodger-blue-50);
+    --accent-12: var(--color-dodger-blue-50);
+  }
+}
