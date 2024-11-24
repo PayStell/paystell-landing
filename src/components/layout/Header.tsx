@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { useScrollDirection } from "@/hooks/use-scroll-direction";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import Image from "next/image";
 
 const Header = () => {
 	const { scrollDirection, isAtTop } = useScrollDirection();
@@ -19,9 +20,14 @@ const Header = () => {
 			)}
 		>
 			<div className="container flex h-16 items-center justify-between">
-				<Link href="/" className="flex items-center space-x-2">
-					<span className="text-xl font-bold">PayStell</span>
-					<span className="text-2xl">💫</span>
+				<Link href="/" className="flex items-center">
+					<Image
+						src="/logo.svg"
+						alt="PayStell Logo"
+						width={120}
+						height={30}
+						priority
+					/>
 				</Link>
 
 				<nav className="hidden md:flex items-center gap-6">
