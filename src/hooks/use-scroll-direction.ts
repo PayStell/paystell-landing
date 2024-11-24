@@ -1,35 +1,37 @@
-import { useState, useEffect, useCallback, useRef } from 'react'
+import { useCallback, useEffect, useRef, useState } from "react";
 
 export function useScrollDirection() {
-  const [scrollDirection, setScrollDirection] = useState<'up' | 'down'>('up')
-  const [isAtTop, setIsAtTop] = useState(true)
-  const lastScrollY = useRef(0)
+	const [scrollDirection, setScrollDirection] = useState<"up" | "down">("up");
+	const [isAtTop, setIsAtTop] = useState(true);
+	const lastScrollY = useRef(0);
 
-  const updateScrollDirection = useCallback(() => {
-    const scrollY = window.scrollY
-    const direction = scrollY > lastScrollY.current ? 'down' : 'up'
-    
-    setIsAtTop(scrollY < 10)
+	const updateScrollDirection = useCallback(() => {
+		const scrollY = window.scrollY;
+		const direction = scrollY > lastScrollY.current ? "down" : "up";
 
-    if (direction !== scrollDirection && 
-        (Math.abs(scrollY - lastScrollY.current) > 10)) {
-      setScrollDirection(direction)
-    }
-    lastScrollY.current = scrollY > 0 ? scrollY : 0
-  }, [scrollDirection])
+		setIsAtTop(scrollY < 10);
 
-  useEffect(() => {
-    lastScrollY.current = window.scrollY
+		if (
+			direction !== scrollDirection &&
+			Math.abs(scrollY - lastScrollY.current) > 10
+		) {
+			setScrollDirection(direction);
+		}
+		lastScrollY.current = scrollY > 0 ? scrollY : 0;
+	}, [scrollDirection]);
 
-    const handleScroll = () => {
-      window.requestAnimationFrame(updateScrollDirection)
-    }
+	useEffect(() => {
+		lastScrollY.current = window.scrollY;
 
-    window.addEventListener('scroll', handleScroll, { passive: true })
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [updateScrollDirection])
+		const handleScroll = () => {
+			window.requestAnimationFrame(updateScrollDirection);
+		};
 
-  return { scrollDirection, isAtTop }
-} 
+		window.addEventListener("scroll", handleScroll, { passive: true });
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, [updateScrollDirection]);
+
+	return { scrollDirection, isAtTop };
+}
