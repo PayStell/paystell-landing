@@ -16,7 +16,11 @@ PayStell is a payment solution that enables merchants to accept payments on the 
 
 ## 🛠️ Technologies
 
-- Frontend: HTML, CSS, JavaScript, TypeScript
+- Next.js 14
+- React 18
+- TypeScript
+- Tailwind CSS
+- Radix UI
 
 ## 🏁 Quick Start
 
@@ -32,7 +36,14 @@ npm install
 cp .env.example .env
 
 # Start development server
-npm run start
+npm run dev
+
+# Other available commands
+npm run build     # Build for production
+npm run start     # Start production server
+npm run lint      # Run Biome linting
+npm run format    # Format code with Biome
+npm run check     # Run Biome checks and auto-fix
 ```
 
 ## 🤝 Contributing
