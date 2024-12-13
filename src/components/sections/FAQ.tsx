@@ -1,7 +1,14 @@
+"use client"
+
 import { ChevronDown } from "lucide-react";
 import { useState } from "react";
 
-const faqs = [
+interface FAQ {
+  question: string;
+  answer: string;
+}
+
+const faqs: FAQ[] = [
   {
     question: "Is Paystell secure for payments?",
     answer: "PayStell uses Stellar blockchain technology to ensure secure, reliable transactions with encryption that protects your data and funds."
@@ -29,9 +36,9 @@ const faqs = [
 ];
 
 const FAQ = () => {
-  const [openIndex, setOpenIndex] = useState(null);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  const toggleFaq = (index) => {
+  const toggleFaq = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
