@@ -3,20 +3,20 @@ import { ArrowRight } from "lucide-react";
 const steps = [
 	{
 		number: "01",
-		title: "Register and Setup",
-		description: "Register and set up a customized gateway with your branding.",
+		title: "Register & Setup",
+		description: "Get paid instantly, anywhere in the world",
 	},
 	{
 		number: "02",
-		title: "Integration",
+		title: "Share Link",
 		description:
-			"Integrate PayStell with your store and set payment parameters.",
+			"Get paid instantly, anywhere in the world",
 	},
 	{
 		number: "03",
-		title: "Accept Payments",
+		title: "Receive Payments",
 		description:
-			"Accept payments in local currency via Stellar-powered transactions.",
+			"Get paid instantly, anywhere in the world",
 	},
 ];
 
@@ -24,12 +24,17 @@ const HowItWorks = () => {
 	return (
 		<section id="how-it-works" className="py-24 bg-background">
 			<div className="container">
-				<div className="text-center max-w-3xl mx-auto">
+				<div className="flex justify-center items-center mb-4">
+					<div className="px-3 py-1 text-sm font-semibold rounded-full bg-[rgb(229,247,255)] text-[rgb(1,158,255)]" >
+						BENEFITS 💫
+					</div> 
+				</div>	
+				<div className="mt-4 text-center max-w-3xl mx-auto">
 					<h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-						Get started in minutes
+						How it works!
 					</h2>
 					<p className="mt-4 text-lg text-muted-foreground">
-						Simple steps to transform your payment experience
+						Getting started is this simple - from creating a payment link to receiving funds, we've made every step smooth and hassle-free.
 					</p>
 				</div>
 
