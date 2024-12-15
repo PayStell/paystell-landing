@@ -1,5 +1,3 @@
-import { ArrowRight } from "lucide-react";
-
 const steps = [
 	{
 		number: "01",
@@ -11,6 +9,30 @@ const steps = [
 		title: "Share Link",
 		description:
 			"Get paid instantly, anywhere in the world",
+		content: (
+			<div className="flex flex-col items-center justify-center w-full p-4 rounded-lg shadow-md">
+				<h4 className="text-sm font-semibold mb-2">Share your payment link</h4>
+				<p className="text-xs mb-2">Share as you prefer</p>
+
+				<div className="w-full mb-2">
+					<input type="text"
+							value="https://link.paystell.com/11aa22"
+							readOnly
+							className="w-full p-2 text-xs border rounded-lg" />
+				</div>
+
+				<button className="bg-[rgb(1,158,255)] text-white text-sm font-semibold px-4 py-1 rounded-md">Copy Link</button>
+
+				<p className="text-xs mt-4 mb-2">Charge for a payment button on your website</p>
+
+				<div className="w-full mb-2">
+					<input type="text"
+							value={`<script src="https://integrate.paystell.com/"`}
+							readOnly
+							className="w-full p-2 text-xs border rounded-l" />
+				</div>
+			</div>
+		),
 	},
 	{
 		number: "03",
@@ -25,7 +47,7 @@ const HowItWorks = () => {
 		<section id="how-it-works" className="py-24 bg-background">
 			<div className="container">
 				<div className="flex justify-center items-center mb-4">
-					<div className="px-3 py-1 text-sm font-semibold rounded-full bg-[rgb(229,247,255)] text-[rgb(1,158,255)]" >
+					<div className="px-3 py-1 text-sm font-semibold rounded-full bg-[rgb(229,247,255)] text-[rgb(1,158,255)] flex items-center gap-1" >
 						BENEFITS 💫
 					</div> 
 				</div>	
@@ -38,23 +60,16 @@ const HowItWorks = () => {
 					</p>
 				</div>
 
-				<div className="mt-16 grid gap-8 md:grid-cols-3">
+				<div className="relative mt-16 flex justify-between items-center">
 					{steps.map((step, index) => (
 						<div
-							key={step.number}
-							className="relative flex flex-col items-center text-center"
-						>
-							<div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
-								<span className="text-xl font-bold text-primary">
-									{step.number}
-								</span>
+							key={index}
+							className="relative z-10 w-1/3 flex flex-col items-center text-center px-4">
+							<div className="flex items-center justify-center w-60 h-60 bg-white rounded-lg shadow-lg">
+								{step.content || null}
 							</div>
-							<h3 className="text-xl font-semibold mb-2">{step.title}</h3>
+							<h3 className="mt-4 font-semibold text-lg">{step.title}</h3>
 							<p className="text-muted-foreground">{step.description}</p>
-
-							{index < steps.length - 1 && (
-								<ArrowRight className="hidden md:block absolute top-8 -right-4 w-8 h-8 text-muted-foreground/30" />
-							)}
 						</div>
 					))}
 				</div>
