@@ -41,7 +41,7 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <section className="relative pt-24 bg-background">
+    <section id="testimonials" className="relative pt-24 bg-background">
       <div className="container">
         <div className="text-center flex flex-col items-center">
           <Badge className="w-fit bg-primary/10 px-3 rounded-xl hover:bg-primary/10">
