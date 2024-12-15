@@ -57,6 +57,7 @@ const FAQ = () => {
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
               Everything you need to know about Paystell. Can't find the answer you're looking for?{" "}
+              <br/>
               <a href="#contact" className="text-primary hover:underline">
                 Contact our friendly team
               </a>
