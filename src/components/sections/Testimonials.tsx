@@ -54,7 +54,7 @@ const Testimonials = () => {
           <p className="mt-4 text-lg text-muted-foreground">
             Hear what our users have to say about PayStell.
           </p>
-          <div className="relative mt-12 w-full mx-auto min-h-[410px]">
+          <div className="relative mt-12 w-full mx-auto min-h-[700px] sm:min-h-[500px] md:min-h-[410px]">
             <div className="relative flex justify-center">
               {testimonials.map((testimonial, index) => {
                 const isActive = index === activeIndex;
