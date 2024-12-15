@@ -11,27 +11,27 @@ interface FAQ {
 const faqs: FAQ[] = [
   {
     question: "Is Paystell secure for payments?",
-    answer: "PayStell uses Stellar blockchain technology to ensure secure, reliable transactions with encryption that protects your data and funds."
+    answer: "Yes, Paystell is highly secure for payments. Our platform leverages the advanced security features of the Stellar blockchain, including encryption, decentralized ledger technology, and multi-signature capabilities. These ensure that all transactions are safe, transparent, and resistant to fraud. Additionally, Paystell implements robust security protocols and complies with industry standards to protect your data and funds at every step."
   },
   {
     question: "How do I create a payment link?",
-    answer: "Creating a payment link is simple and only takes a few steps. You can generate a unique payment link from your dashboard."
+    answer: "To create a payment link with Paystell, simply sign up for an account, log in, and go to the 'Create Payment Link' section. Customize the link with the amount, description, and any other details you need. Once created, copy the link and share it with your customers via email, social media, or messaging apps. Your payment link is then live and ready to accept payments securely from anywhere in the world, instantly."
   },
   {
-    question: "What are the transactions fee?",
-    answer: "Our transaction fees are competitive and transparent. Please check our pricing page for detailed information."
+    question: "What are the transaction fees?",
+    answer: "Paystell operates with ultra-low transaction fees, leveraging the efficiency of the Stellar network. Each transaction costs just a fraction of a cent, plus a 0.5% commission per transaction. This makes Paystell one of the most affordable and competitive payment solutions available."
   },
   {
     question: "Can I accept international payments?",
-    answer: "Yes, PayStell supports international payments across multiple currencies."
+    answer: "Yes, you can accept payments from anywhere in the world! Paystell allows you to receive international payments seamlessly, thanks to the global reach of the Stellar network. Whether your customers are in the next city or across the globe, you can easily receive payments in multiple currencies, all with low transaction fees and high security."
   },
   {
     question: "How long does it take to receive payments?",
-    answer: "Payment processing times vary depending on the payment method and location."
+    answer: "Payments through Paystell are processed almost instantly! Thanks to the efficiency of the Stellar network, funds are typically available within seconds, ensuring you can access your money quickly and securely. No long waiting times—just fast, reliable transactions."
   },
   {
     question: "Do I need technical skills to use Paystell?",
-    answer: "No, PayStell is designed to be user-friendly and requires no technical expertise to use."
+    answer: "No, you don't need any technical skills to use Paystell. Our platform is designed to be user-friendly and intuitive, allowing anyone to create payment links, manage transactions, and receive payments with ease. Whether you're a small business owner or an entrepreneur, Paystell makes it simple to get started without any technical expertise."
   }
 ];
 
@@ -56,7 +56,7 @@ const FAQ = () => {
               Frequently Asked Questions
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              Everything you need to about Paystell. Can't find the answer you're looking for?{" "}
+              Everything you need to know about Paystell. Can't find the answer you're looking for?{" "}
               <a href="#contact" className="text-primary hover:underline">
                 Contact our friendly team
               </a>
