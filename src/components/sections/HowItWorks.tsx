@@ -55,11 +55,11 @@ const steps = [
 
 const HowItWorks = () => {
 	return (
-		<section id="how-it-works" className="py-24 bg-background">
+		<section id="how-it-works" className="py-24 bg-background" aria-labelledby="how-it-works-title">
 			<div className="container w-full max-w-full">
 				<div className="flex justify-center items-center mb-4">
 					<div className="px-3 py-1 text-sm font-semibold rounded-full bg-[rgb(229,247,255)] text-[rgb(1,158,255)] flex items-center gap-1" >
-						BENEFITS <img src="/files/star.png" className="w-5 h-5"/>
+						BENEFITS <img src="/files/star.png" alt="start in benefits" className="w-5 h-5"/>
 					</div> 
 				</div>	
 				<div className="mt-4 text-center max-w-3xl mx-auto">
@@ -71,22 +71,23 @@ const HowItWorks = () => {
 					</p>
 				</div>
 
-				<div className="relative mt-16 flex justify-between items-center ">
+				<div className="relative mt-16 flex flex-col md:flex-row justify-between items-start md:items-center ">
 					{steps.map((step, index) => (
 						<div
 							key={index}
-							className="relative z-10 w-1/2 flex flex-col items-center text-center px-4">
+							className="relative z-10 w-full md:w-1/2 flex flex-col items-center text-center px-4 mb-8 md:mb-0"
+              aria-labelledby={`step-title-${index}`}
+              >
 							<div className="flex items-center justify-center w-80 h-60 bg-white rounded-lg shadow-lg overflow-hidden">
 								{step.content || null}
 							</div>
 							<div className="max-w-40">
 
-							<h3 className="mt-4 font-semibold text-lg">{step.title}</h3>
+							<h3 id={`step-title-${index}`} className="mt-4 font-semibold text-lg">{step.title}</h3>
 							
-								<p className="text-muted-foreground">{step.description}</p>
+							<p className="text-muted-foreground">{step.description}</p>
 							</div>
 						</div>
-						
 					))}
 				</div>
 			</div>
