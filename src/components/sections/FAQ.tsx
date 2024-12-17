@@ -2,6 +2,7 @@
 
 import { ChevronDown } from "lucide-react";
 import { useState } from "react";
+import { Badge } from "@/components/ui/badge";
 
 interface FAQ {
   question: string;
@@ -46,10 +47,10 @@ const FAQ = () => {
     <section id="faq" className="py-24 bg-background">
       <div className="container">
         <div className="max-w-3xl mx-auto">
-          <div className="flex items-center gap-2 text-sm text-primary mb-4">
-            <span className="font-medium">SUPPORT</span>
-            <span className="text-lg">★</span>
-          </div>
+        <Badge className="w-fit bg-primary/10 px-3 rounded-xl hover:bg-primary/10">
+            <h2 className="text-lg font-bold text-primary mr-3">SUPPORT</h2>
+            <Image src="/star.svg" width={28} height={28} alt="star" />
+        </Badge>
 
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
@@ -68,9 +69,9 @@ const FAQ = () => {
             {faqs.map((faq, index) => (
               <div
                 key={index}
-                className={`border rounded-lg bg-background/50 ${
+                className={border rounded-lg bg-background/50 ${
                   openIndex === index ? "border-primary" : ""
-                }`}
+                }}
               >
                 <button
                   onClick={() => toggleFaq(index)}
@@ -78,9 +79,9 @@ const FAQ = () => {
                 >
                   <span className="font-medium text-left">{faq.question}</span>
                   <ChevronDown
-                    className={`h-5 w-5 text-muted-foreground transition-transform duration-200 ${
+                    className={h-5 w-5 text-muted-foreground transition-transform duration-200 ${
                       openIndex === index ? "rotate-180" : ""
-                    }`}
+                    }}
                   />
                 </button>
                 {openIndex === index && (
