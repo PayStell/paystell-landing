@@ -12,6 +12,7 @@ export default function Home() {
 	return (
 		<>
 			<Hero />
+			<ChooseUs />
 			<Features />
 			<ChooseUs />
 			<HowItWorks />
