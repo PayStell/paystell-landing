@@ -6,13 +6,14 @@ import HowItWorks from "@/components/sections/HowItWorks";
 import Pricing from "@/components/sections/Pricing";
 import FAQ from "@/components/sections/FAQ";
 import Testimonials from "@/components/sections/Testimonials";
-
+import ChooseUs from "@/components/layout/ChooseUs";
 
 export default function Home() {
 	return (
 		<>
 			<Hero />
 			<Features />
+			<ChooseUs />
 			<HowItWorks />
 			<Benefits />
 			<Testimonials/>
