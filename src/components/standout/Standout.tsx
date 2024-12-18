@@ -3,7 +3,8 @@ import Image from "next/image"
 import ImageOne from "@/components/standout/assets/star.svg"
 import ImageTwo from  "@/components/standout/assets/Frame 2147223741.png"
 import ImageThree from  "@/components/standout/assets/tick-circle.svg"
-Image
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 const StandOutSection = () => {
   return (
     <div className="md:min-h-screen flex flex-col md:flex-row items-center md:justify-between px-6 md:px-16 space-y-10 md:space-y-0 pt-3">
