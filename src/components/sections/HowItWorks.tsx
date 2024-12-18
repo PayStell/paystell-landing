@@ -1,6 +1,9 @@
 import { Badge } from "../ui/badge";
 import Image from "next/image";
 
+import { Badge } from "../ui/badge";
+import Image from "next/image";
+
 const steps = [
   {
     number: "01",
