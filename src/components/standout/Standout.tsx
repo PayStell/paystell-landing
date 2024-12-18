@@ -82,12 +82,11 @@ const StandOutSection = () => {
       </div>
   
      
-      <button
-        type="button"
-        className="px-4 py-2 mt-10 text-base font-medium inline-flex items-center text-white bg-[#009EFF] rounded hover:bg-blue-800 focus:ring-4 focus:outline-none dark:bg-[#009EFF] dark:hover:bg-blue-700 dark:focus:ring-blue-800 transition-transform transform hover:scale-105"
-      >
-        Get Started
-      </button>
+          <div className="mt-10 flex flex-col sm:flex-row gap-4">
+            <Button size="lg">
+							Get Started Now
+						</Button>
+          </div>
     </div>
   
   
