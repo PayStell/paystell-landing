@@ -1,3 +1,6 @@
+import { Badge } from "../ui/badge";
+import Image from "next/image";
+
 const steps = [
   {
     number: "01",
@@ -57,11 +60,18 @@ const HowItWorks = () => {
 	return (
 		<section id="how-it-works" className="py-24 bg-background" aria-labelledby="how-it-works-title">
 			<div className="container w-full max-w-full">
-				<div className="flex justify-center items-center mb-4">
+				{/*<div className="flex justify-center items-center mb-4">
 					<div className="px-3 py-1 text-sm font-semibold rounded-full bg-[rgb(229,247,255)] text-[rgb(1,158,255)] flex items-center gap-1" >
 						BENEFITS <img src="/files/star.png" alt="start in benefits" className="w-5 h-5"/>
 					</div> 
-				</div>	
+				</div>	*/}
+
+        <div className="flex justify-center items-center mb-4">
+            <Badge className="w-fit bg-primary/10 px-3 rounded-xl hover:bg-primary/10">
+              <h2 className="text-lg font-bold text-primary mr-3">HOW IT WORKS</h2>
+            <Image src="/star.svg" width={28} height={28} alt="star" />
+          </Badge>
+				</div>
 				<div className="mt-4 text-center max-w-3xl mx-auto">
 					<h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
 						How it Works!
