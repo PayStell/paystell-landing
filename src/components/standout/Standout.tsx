@@ -11,20 +11,12 @@ const StandOutSection = () => {
 			<div className="container flex flex-col md:flex-row md:justify-between md:items-start">
      
       <div className="md:w-[608px]">
-        <div className="bg-[#E6F7FF] w-32 p-2 flex items-center animate-pulse rounded">
-          <span className="text-base font-semibold text-[#009EFF] ">
-            FEATURES
-          </span>
-          <div className="w-4 h-4 ml-2">
-            <Image
-              src={ImageOne}
-              width={500}
-              height={300}
-              className="w-full h-full object-contain"
-              alt="Features Icon"
-            />
-          </div>
-        </div>
+          <div className="flex mb-4">
+            <Badge className="w-fit bg-primary/10 px-3 rounded-xl hover:bg-primary/10">
+              <h2 className="text-lg font-bold text-primary mr-3">FEATURES</h2>
+              <Image src="/star.svg" width={28} height={28} alt="star" />
+						</Badge>
+					</div>	
         <h2 className="text-2xl md:text-3xl font-semibold mt-4 mb-2">
           Why We Stand Out
         </h2>
