@@ -16,7 +16,7 @@ const Header = () => {
 				scrollDirection === "down" ? "-translate-y-full" : "translate-y-0",
 				isAtTop
 					? "bg-[#000F24]"
-					: "bg-[#000F24]/80 backdrop-blur-md border-b",
+					: "bg-[#000F24]/80 backdrop-blur-md",
 			)}
 		>
 			<div className="container flex h-16 items-center justify-between">
