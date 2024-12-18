@@ -99,7 +99,7 @@ const StandOutSection = () => {
 		  alt="Why We Stand Out Image"
 	  />
 	</div>
-  </div>
+  </section>
   )
 }
 
