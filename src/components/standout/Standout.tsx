@@ -7,9 +7,8 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 const StandOutSection = () => {
   return (
-    <div className="md:min-h-screen flex flex-col md:flex-row items-center md:justify-between px-6 md:px-16 space-y-10 md:space-y-0 pt-3">
-
-    <div className="w-full md:w-1/2">
+		<section id="how-it-works" className="py-24 bg-background">
+			<div className="container flex flex-col md:flex-row md:justify-between md:items-start">
      
       <div className="md:w-[608px]">
         <div className="bg-[#E6F7FF] w-32 p-2 flex items-center animate-pulse rounded">
