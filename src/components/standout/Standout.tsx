@@ -90,15 +90,15 @@ const StandOutSection = () => {
     </div>
   
   
-    <div className="w-full md:h-96 md:w-1/2 flex justify-center items-center animate-fade-in ">
-      <Image
-        src={ImageTwo}
-        width={500}
-        height={300}
-        className="w-full h-72 object-contain"
-        alt="Why We Stand Out Image"
-      />
-    </div>
+	<div className="w-full md:w-1/2 flex justify-center items-center animate-fade-in mt-10 md:mt-0">
+	  <Image
+		  src={ImageTwo}
+		  width={500}
+		  height={300}
+		  className="w-full h-72 object-contain"
+		  alt="Why We Stand Out Image"
+	  />
+	</div>
   </div>
   )
 }
