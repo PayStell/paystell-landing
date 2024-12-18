@@ -60,12 +60,6 @@ const HowItWorks = () => {
 	return (
 		<section id="how-it-works" className="py-24 bg-background" aria-labelledby="how-it-works-title">
 			<div className="container w-full max-w-full">
-				{/*<div className="flex justify-center items-center mb-4">
-					<div className="px-3 py-1 text-sm font-semibold rounded-full bg-[rgb(229,247,255)] text-[rgb(1,158,255)] flex items-center gap-1" >
-						BENEFITS <img src="/files/star.png" alt="start in benefits" className="w-5 h-5"/>
-					</div> 
-				</div>	*/}
-
         <div className="flex justify-center items-center mb-4">
             <Badge className="w-fit bg-primary/10 px-3 rounded-xl hover:bg-primary/10">
               <h2 className="text-lg font-bold text-primary mr-3">HOW IT WORKS</h2>
