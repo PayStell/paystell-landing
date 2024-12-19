@@ -3,6 +3,9 @@ import { Badge } from "../ui/badge";
 import Image from "next/image";
 import ReceivePayment from "../ui/animation/ReceivePayments";
 
+import { Badge } from "../ui/badge";
+import Image from "next/image";
+
 const steps = [
   {
     number: "01",
