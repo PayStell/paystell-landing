@@ -55,7 +55,7 @@ const steps = [
     title: "Receive Payments",
     description: "Get paid instantly, anywhere in the world",
     content: (
-      <ReceivePayment />
+      <ReceivePayments />
     ),
   },
 ];
