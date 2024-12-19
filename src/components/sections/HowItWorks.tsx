@@ -1,5 +1,7 @@
+import ReceivePayments from "../ui/animation/ReceivePayments";
 import { Badge } from "../ui/badge";
 import Image from "next/image";
+import ReceivePayment from "../ui/animation/ReceivePayments";
 
 const steps = [
   {
@@ -12,7 +14,7 @@ const steps = [
     title: "Share Link",
     description: "Get paid instantly, anywhere in the world",
     content: (
-      <div className="flex flex-col items-center justify-center w-full p-4 ">
+      <div className="relative w-full p-4 bg-white border border-gray-200 rounded-lg shadow-lg">
         <h4 className="text-sm font-semibold mb-2 text-left w-full">
           Share your payment link
         </h4>
@@ -53,6 +55,9 @@ const steps = [
     number: "03",
     title: "Receive Payments",
     description: "Get paid instantly, anywhere in the world",
+    content: (
+      <ReceivePayment />
+    ),
   },
 ];
 
@@ -79,7 +84,8 @@ const HowItWorks = () => {
 					{steps.map((step, index) => (
 						<div
 							key={index}
-							className="relative z-10 w-full md:w-1/2 flex flex-col items-center text-center px-4 mb-8 md:mb-0"
+							className={`relative z-10 w-full md:w-1/2 flex flex-col items-center text-center px-4 mb-8 md:mb-0 ${index === 1 ? 'bg-background bg-no-repeat' : ''}`}
+              style={index === 1 ? { backgroundImage: 'url("/Lineshow.svg")', backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'center 65%' } : {}}
               aria-labelledby={`step-title-${index}`}
               >
 							<div className="flex items-center justify-center w-80 h-60 bg-white rounded-lg shadow-lg overflow-hidden">
