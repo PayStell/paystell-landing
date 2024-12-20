@@ -31,7 +31,7 @@ const ReceivePayments = () => {
   }, []);
 
   return (
-    <div className="relative h-80 w-full overflow-hidden">
+    <div className="relative h-80 w-full overflow-hidden flex items-center justify-center">
       <AnimatePresence>
         {payments.map((payment) => (
           <motion.div
