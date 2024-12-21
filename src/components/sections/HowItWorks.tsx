@@ -1,7 +1,7 @@
-import ReceivePayments from "../ui/animation/ReceivePayments";
-import { Badge } from "../ui/badge";
+import ReceivePayments from "@/components/ui/animation/ReceivePayments";
+import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
-import ReceivePayment from "../ui/animation/ReceivePayments";
+
 
 const steps = [
   {
@@ -56,7 +56,7 @@ const steps = [
     title: "Receive Payments",
     description: "Get paid instantly, anywhere in the world",
     content: (
-      <ReceivePayment />
+      <ReceivePayments />
     ),
   },
 ];
