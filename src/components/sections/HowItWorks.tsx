@@ -2,6 +2,7 @@ import ReceivePayments from "@/components/ui/animation/ReceivePayments";
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
 
+
 const steps = [
   {
     number: "01",
@@ -13,11 +14,11 @@ const steps = [
     title: "Share Link",
     description: "Get paid instantly, anywhere in the world",
     content: (
-      <div className="relative w-full p-4 bg-white border border-gray-200 rounded-lg shadow-lg">
+      <div className="relative w-full p-2 bg-white border border-gray-200 rounded-lg shadow-lg my-4">
         <h4 className="text-sm font-semibold mb-2 text-left w-full">
           Share your payment link
         </h4>
-        <div className="border border-gray-100 rounded-lg shadow-lg w-full mb-4 p-4">
+        <div className="border border-gray-100 rounded-lg shadow-lg w-full mb-2 p-2">
           <p className="text-xs mb-2 text-left w-full">Share as you prefer</p>
 
           <div className="w-full mb-2">
@@ -33,8 +34,8 @@ const steps = [
             Copy Link
           </button>
         </div>
-        <div className="border border-gray-100 rounded-lg shadow-lg w-full mb-4 p-2">
-          <p className="text-xs mt-2 mb-2 text-left w-full ">
+        <div className="border border-gray-100 rounded-lg shadow-lg w-full mb-1 p-2">
+          <p className="text-xs mt-1 mb-1 text-left w-full ">
             Charge for a payment button on your website
           </p>
 
@@ -84,9 +85,9 @@ const HowItWorks = () => {
 						<div
 							key={index}
 							className={`relative z-10 w-full md:w-1/2 flex flex-col items-center text-center px-4 mb-8 md:mb-0 ${index === 1 ? 'bg-background bg-no-repeat' : ''}`}
-              style={index === 1 ? { backgroundImage: 'url("/Lineshow.svg")', backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'center 65%' } : {}}
-              aria-labelledby={`step-title-${index}`}
-              >
+              				style={index === 1 ? { backgroundImage: 'url("/Lineshow.svg")', backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'center 55%' } : {}}
+              				aria-labelledby={`step-title-${index}`}>
+									
 							<div className="flex items-center justify-center w-80 h-60 bg-white rounded-lg shadow-lg overflow-hidden">
 								{step.content || null}
 							</div>
