@@ -17,7 +17,7 @@ const Footer = () => {
 								priority
 							/>
 						</Link>
-						{/* Redes sociales */}
+						{/* Social Media */}
 						<div className="flex gap-4">
 							<Link target="_blank" href="https://www.facebook.com/paystell">
 								<Image
@@ -158,3 +158,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
