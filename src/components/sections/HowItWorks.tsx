@@ -7,12 +7,12 @@ const steps = [
   {
     number: "01",
     title: "Register & Setup",
-    description: "Get paid instantly, anywhere in the world",
+    description: "Sign up in minutes and customize your profile to stand out. No hassle, just results.",
   },
   {
     number: "02",
     title: "Share Link",
-    description: "Get paid instantly, anywhere in the world",
+    description: "Share your unique link on social media, chats, or anywhere you like. Make it easy for others to connect with you!",
     content: (
       <div className="relative w-full p-2 bg-white border border-gray-200 rounded-lg shadow-lg my-4">
         <h4 className="text-sm font-semibold mb-2 text-left w-full">
@@ -54,7 +54,7 @@ const steps = [
   {
     number: "03",
     title: "Receive Payments",
-    description: "Get paid instantly, anywhere in the world",
+    description: "Get paid instantly and securely. You focus on creating; we handle the rest.",
     content: (
       <ReceivePayments />
     ),
