@@ -20,7 +20,7 @@ const Hero = () => {
 						<span className="inline-block animate-pulse">💫</span>
 					</h1>
 
-					<p className="mt-6 text-lg leading-8 text-muted-foreground">
+					<p className="mt-6 text-lg leading-8 text-white">
 						Easily accept payments reduce transaction cost, and expand your business
 						globally with PayStell's fast, secure payment solutions.
 					</p>
