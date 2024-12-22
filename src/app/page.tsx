@@ -1,4 +1,3 @@
-import Benefits from "@/components/sections/Benefits";
 import CTA from "@/components/sections/CTA";
 import Features from "@/components/sections/Features";
 import Hero from "@/components/sections/Hero";
@@ -16,7 +15,6 @@ export default function Home() {
 			<Features />
 			<ChooseUs />
 			<HowItWorks />
-			<Benefits />
 			<StandOutSection/>
 			<Testimonials/>
 			<Pricing />
