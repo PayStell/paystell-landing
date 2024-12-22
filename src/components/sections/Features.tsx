@@ -45,7 +45,7 @@ const features = [
 
 const Features = () => {
 	return (
-		<Section id="features" variant="muted">
+		<Section id="features">
 			<Container>
 				<SectionHeader
 					title="Everything you need to accept payments"
