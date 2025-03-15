@@ -17,7 +17,6 @@ export default function Home() {
 			<HowItWorks />
 			<StandOutSection/>
 			<Testimonials/>
-			<Pricing />
 			<CTA />
 			<FAQ/>
 		</>
